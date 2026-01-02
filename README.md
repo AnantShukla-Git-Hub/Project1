@@ -16,3 +16,15 @@ Instead, it is designed to help understand:
 - Program flow from `main()` to helper functions
 - Input handling, strings, and buffers
 - Debugging and repository navigation
+
+## Future Scope
+
+- Improve the encryption logic
+- Add better error handling
+- Support different input methods
+- Integrate with a browser extension (planned separately)
+
+## Project Status
+
+Currently in the initial setup and learning phase.
+The project will evolve step by step as understanding improves.
