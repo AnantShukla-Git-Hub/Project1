@@ -2,6 +2,8 @@
 #define ENCRYPT_H
 
 #include <string>
-std::string encryptText(const std::string& text);
+using namespace std;
+
+string encryptText(string text, int key);
 
 #endif
