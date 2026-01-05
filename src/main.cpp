@@ -31,7 +31,7 @@ int main() {
         }
 
         cin.ignore(); // clear input buffer jo bhi bacha hai taki getline sahi se kaam kare
-        cout << "Enter key (number): "<<endl<<"(Any integer between -100 and 100 to make encryption more secure):"<<endl<<"Insani bacche key yaad bhi rakhna password hai :)\n";
+        cout << "Enter key (number): "<<endl<<"(Any integer between -100 and 100 to make encryption more secure)"<<endl<<"Insani bacche key yaad bhi rakhna password hai :)\n"<<endl<<"                                         "<<endl;
         cin >> key;
         
         // key range validation
