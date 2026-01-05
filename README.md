@@ -1,30 +1,66 @@
-# Project1
-A C++ based text and emoji encryption–decryption project focused on learning real-world project structure, file organization, input handling, and core logic flow. Built as a learning-first project to improve repository understanding, debugging skills, and practical C++ development.
+# Project1 – CryptoCLI (C++ Encryption & Decryption Tool)
 
-## Project Idea
+Project1 (CryptoCLI) is a **C++ based command-line encryption and decryption tool**
+built with a **learning-first approach**, focusing on real-world project structure,
+file handling, debugging, and clean program flow.
 
-The idea is to build a C++ application that:
-- Takes text input from the user, including emojis.
-- Converts the text into an encrypted, random-looking string.
-- Allows the encrypted text to be copied and pasted anywhere.
-- Decrypts the encrypted text back to the original text correctly.
+> Note: This project is **not intended for strong cryptographic security**.  
+> Its purpose is **learning, experimentation, and system-level understanding**.
 
-This project is not focused on strong cryptography.
-Instead, it is designed to help understand:
-- How a C++ project is structured
-- How multiple files work together
-- Program flow from `main()` to helper functions
-- Input handling, strings, and buffers
-- Debugging and repository navigation
+---
 
-## Future Scope
+## ✨ Features
 
-- Improve the encryption logic
-- Add better error handling
-- Support different input methods
-- Integrate with a browser extension (planned separately)
+###  Text Encryption & Decryption
+- Supports:
+  - Lowercase letters
+  - Uppercase letters
+  - Digits
+- Symbols and emojis are preserved (not modified)
 
-## Project Status
+---
 
-Currently in the initial setup and learning phase.
-The project will evolve step by step as understanding improves.
+###  File Encryption & Decryption
+- Encrypt text-based files.
+- Decrypt encrypted files back to readable text
+- Line-by-line processing (memory-safe for large files)
+- Original files are **never modified**
+
+---
+
+### 🔹 User-Friendly CLI
+- Menu-driven interface
+- Clear success and error messages
+- Output file path is explicitly shown to the user
+- Designed to work even for non-programmer users
+
+---
+
+## 🧑‍💻 How to Use (For Users)
+
+### 1️⃣ Run the Program
+- Download `crypto.exe` (from Releases or shared executable)
+- Double-click the file
+- 1. Encrypt Text
+  2. Decrypt Text
+  3. Encrypt File
+  4. Decrypt File
+  5. Exit
+
+---
+
+## Important Notes
+1.Always use the same key for encryption and decryption.
+2.Original files are never overwritten.
+3.Output files:
+  Encrypted → .enc
+  Decrypted → .dec
+3.This tool is designed for text-based files only.
+
+---
+
+## Limitations
+1.Not suitable for secure or production-grade encryption
+2.Binary files (images, PDFs, videos) are not supported
+3.Emojis are preserved but not encrypted
+4.CLI-based (no GUI)
