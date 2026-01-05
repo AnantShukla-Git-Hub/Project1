@@ -58,3 +58,59 @@ bool decryptFile(const string& inputFile,
     outFile.close();
     return true;
 }
+
+
+bool encryptBinaryFile(const string& inputFile,
+                       const string& outputFile,
+                       int key)
+{
+    ifstream inFile(inputFile, ios::binary);
+    if (!inFile.is_open()) {
+        cout << "Error: Unable to open binary input file.\n";
+        return false;
+    }
+
+    ofstream outFile(outputFile, ios::binary);
+    if (!outFile.is_open()) {
+        cout << "Error: Unable to create binary output file.\n";
+        return false;
+    }
+
+    char byte;
+    while (inFile.get(byte)) {
+        byte = byte + (key % 256);
+        outFile.put(byte);
+    }
+
+    inFile.close();
+    outFile.close();
+    return true;
+}
+
+
+bool decryptBinaryFile(const string& inputFile,
+                       const string& outputFile,
+                       int key)
+{
+    ifstream inFile(inputFile, ios::binary);
+    if (!inFile.is_open()) {
+        cout << "Error: Unable to open encrypted binary file.\n";
+        return false;
+    }
+
+    ofstream outFile(outputFile, ios::binary);
+    if (!outFile.is_open()) {
+        cout << "Error: Unable to create decrypted output file.\n";
+        return false;
+    }
+
+    char byte;
+    while (inFile.get(byte)) {
+        byte = byte - (key % 256);
+        outFile.put(byte);
+    }
+
+    inFile.close();
+    outFile.close();
+    return true;
+}
