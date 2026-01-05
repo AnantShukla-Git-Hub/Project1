@@ -60,7 +60,11 @@ int main() {
             string outputFile = inputFile + ".enc";
             bool success = encryptFile(inputFile, outputFile, key);
             if (success) {
+                cout << "Your file is uploaded successfully for encryption." << endl;
                 cout << "Encrypted file saved at:\n" << outputFile << endl;
+            }
+            else {
+                cout << "Encryption failed. Please check file path and permissions.\n";
             }
         }
         else if (choice == 4) {
@@ -70,7 +74,11 @@ int main() {
             string outputFile = inputFile + ".dec";
             bool success = decryptFile(inputFile, outputFile, key);
             if (success) {
+                cout << "Your file is uploaded successfully for decryption." << endl;
                 cout << "Decrypted file saved at:\n" << outputFile << endl;
+            }
+            else {
+                cout << "Decryption failed. Please check file path and permissions.\n";
             }
         }
         else {

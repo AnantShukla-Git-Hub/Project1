@@ -13,13 +13,13 @@ bool encryptFile(const string& inputFile,
 {
     ifstream inFile(inputFile);
     if (!inFile.is_open()) {
-        cout << "Error: Unable to open input file: " << inputFile << endl;
+        cout << "Error: Input file not found."<< endl<<"Tip: Please check the file path and try again."<< endl << inputFile << endl;
         return false;
     }
 
     ofstream outFile(outputFile);
     if (!outFile.is_open()) {
-        cout << "Error: Unable to create output file: " << outputFile << endl;
+        cout << "Error: Unable to create output file: " <<endl<<"Tip: Check folder permissions." <<endl<< outputFile << endl;
         return false;
     }
 
