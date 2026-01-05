@@ -1,66 +1,72 @@
-# Project1 – CryptoCLI (C++ Encryption & Decryption Tool)
+# Project1 – CryptoCLI  
+### C++ Encryption & Decryption Tool (Text, Text Files & Binary Files)
 
-Project1 (CryptoCLI) is a **C++ based command-line encryption and decryption tool**
-built with a **learning-first approach**, focusing on real-world project structure,
-file handling, debugging, and clean program flow.
+Project1 (**CryptoCLI**) is a **C++ command-line encryption and decryption tool**
+built with a **learning-first mindset**.
 
-> Note: This project is **not intended for strong cryptographic security**.  
-> Its purpose is **learning, experimentation, and system-level understanding**.
+> ⚠️ **Security Disclaimer**  
+> This tool is **not intended for production-grade or secure encryption**. 😗 Because the heart of whole project is only algorithm and if someone cracked it then wo banda smart hai pahli baat and also wo decrypt kar lega raja ji ! 
+> It is designed purely for **learning, experimentation, and system-level understanding**.
 
 ---
 
 ## ✨ Features
 
-###  Text Encryption & Decryption
+### Text Encryption & Decryption
 - Supports:
-  - Lowercase letters
-  - Uppercase letters
-  - Digits
-- Symbols and emojis are preserved (not modified)
+  - Lowercase letters (a–z)
+  - Uppercase letters (A–Z)
+  - Digits (0–9)
+- Symbols and emojis are **preserved** (not encrypted)
+- Same key is required for encryption and decryption
 
 ---
 
-###  File Encryption & Decryption
-- Encrypt text-based files.
-- Decrypt encrypted files back to readable text
-- Line-by-line processing (memory-safe for large files)
+### Text File Encryption & Decryption
+- Works with text-based files
+- Line-by-line processing (memory safe for large files)
 - Original files are **never modified**
+- Output files:
+  - Encrypted file → `.enc`
+  - Decrypted file → `.dec`
 
 ---
 
-### 🔹 User-Friendly CLI
+### Binary File Encryption & Decryption
+- Supports binary files such as:
+  - Images
+  - PDFs
+  - ZIP files
+  - Any other binary data
+- Byte-by-byte processing
+- **Lossless encryption & decryption**
+- File size and structure are preserved
+- Original binary files are never overwritten
+
+---
+
+### User-Friendly CLI
 - Menu-driven interface
-- Clear success and error messages
-- Output file path is explicitly shown to the user
-- Designed to work even for non-programmer users
+- Clear instructions and prompts
+- Meaningful success and error messages
+- Output file path is explicitly displayed
+- Designed to be usable even by non-programmers
 
 ---
 
-## 🧑‍💻 How to Use (For Users)
+## 🧑‍💻 How to Use
 
 ### 1️⃣ Run the Program
-- Download `crypto.exe` (from Releases or shared executable)
-- Double-click the file
-- 1. Encrypt Text
-  2. Decrypt Text
-  3. Encrypt File
-  4. Decrypt File
-  5. Exit
+- Download crypto.exe from Releases or shared executable
+- Run by double-clicking or via terminal
 
 ---
 
-## Important Notes
-1.Always use the same key for encryption and decryption.
-2.Original files are never overwritten.
-3.Output files:
-  Encrypted → .enc
-  Decrypted → .dec
-3.This tool is designed for text-based files only.
-
----
-
-## Limitations
-1.Not suitable for secure or production-grade encryption
-2.Binary files (images, PDFs, videos) are not supported
-3.Emojis are preserved but not encrypted
-4.CLI-based (no GUI)
+### 2️⃣ Menu Options
+1. Encrypt Text
+2. Decrypt Text
+3. Encrypt Text File
+4. Decrypt Text File
+5. Encrypt Binary File
+6. Decrypt Binary File
+7. Exit
