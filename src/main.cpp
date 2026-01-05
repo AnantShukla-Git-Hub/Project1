@@ -19,8 +19,8 @@ int main() {
         cout << "Choices:\n";
         cout << "1. Encrypt Text\n";
         cout << "2. Decrypt Text\n";
-        cout << "3. Encrypt File\n";
-        cout << "4. Decrypt File\n";
+        cout << "3. Encrypt Text File\n";
+        cout << "4. Decrypt Text File\n";
         cout << "5. Exit\n";
         cout << "Enter choice: ";
         cin >> choice;
