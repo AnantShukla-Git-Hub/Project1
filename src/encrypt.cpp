@@ -1,4 +1,6 @@
 #include "encrypt.h"
+#include <string>
+using namespace std;
 
 string encryptText(string text, int key) {
     for (size_t i = 0; i < text.length(); i++) {
@@ -16,7 +18,7 @@ string encryptText(string text, int key) {
         else if (c >= '0' && c <= '9') {
             c = (c - '0' + key % 10 + 10) % 10 + '0';
         }
-        // symbols / emoji -> unchanged
+        // symbols / emoji ko unchanged bcz wo generally 1 byte ke nahi hote and ye logic unke liye sahi se kaam nahi karega
 
         text[i] = c;
     }

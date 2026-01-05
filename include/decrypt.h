@@ -3,8 +3,7 @@
 #define DECRYPT_H
 
 #include <string>
-using namespace std;
 
-string decryptText(string text, int key);
+std::string decryptText(std::string text, int key);
 
 #endif

@@ -1,9 +1,7 @@
 #ifndef ENCRYPT_H
 #define ENCRYPT_H
+#include <string> 
 
-#include <string>
-using namespace std;
-
-string encryptText(string text, int key);
+std::string encryptText(std::string text, int key);
 
 #endif
