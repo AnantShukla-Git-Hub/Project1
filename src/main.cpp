@@ -14,7 +14,7 @@ int main() {
     string inputFile, outputFile;
 
     while (true) {
-        cout << "\n😉😗😏*** Encryption Tool ****😉😗😏\n";
+        cout << "\n😉😗😏*** Encryption Tool by Anant Shukla ****😉😗😏\n";
         cout << "1. Encrypt Text\n";
         cout << "2. Decrypt Text\n";
         cout << "3. Encrypt Text File\n";
