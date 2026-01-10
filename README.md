@@ -58,7 +58,7 @@ built with a **learning-first mindset**.
 
 ### 1️⃣ Run the Program
 - Download crypto.exe from Releases or shared executable
-- Run by double-clicking or via terminal
+- Run by compiling the project in your code editor like VS code.
 
 ---
 
